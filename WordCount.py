@@ -6,7 +6,6 @@
 import glob
 
 def main():
-  textFile = glob.glob("gettysberg.txt","fish.txt")
   valid_files=["fish.txt","gettysberg.txt"]
   fileName=input(f"Enter your chosen file here({', '.join(valid_files)}): (either 'gettysberg.txt' or 'fish.txt')")
   
@@ -17,7 +16,7 @@ def main():
         lineCount=0
         wordCount=0
         letterCount=0
-        for line in textFile:
+        for line in file:
           lineCount=lineCount+1
           words=line.split()
           for w in words:
