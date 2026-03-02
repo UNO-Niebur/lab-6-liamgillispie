@@ -3,8 +3,6 @@
 #Date:3/1/2026
 #Assignment:Lab 6
 #Purpose: Implement a simplified word count program
-import glob
-
 def main():
   valid_files=["fish.txt","gettysberg.txt"]
   fileName=input(f"Enter your chosen file here({', '.join(valid_files)}): (either 'gettysberg.txt' or 'fish.txt')")
